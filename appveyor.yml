@@ -6,9 +6,9 @@ platform: Any CPU
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
-  assembly_version: $(appveyor_repo_tag_name).{build}
-  assembly_file_version: $(appveyor_repo_tag_name).{build}
-  assembly_informational_version: $(appveyor_repo_tag_name).{build}
+  assembly_version: 1.0.{build}
+  assembly_file_version: 1.0.{build}
+  assembly_informational_version: 1.0.{build}
 before_build:
 - cmd: >-
     git submodule init
